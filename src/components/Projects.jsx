@@ -2,9 +2,10 @@ import React, { useContext, useEffect, useState } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
-import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
-import ProjectImg from '../Image/ProjectImg';
+import PortfolioContext from '../context/context';
+// import Title from './Title';
+import Title from './Title'
+import ProjectImg from './Image/ProjectImg';
 
 const Projects = () => {
   const { projects } = useContext(PortfolioContext);
@@ -36,8 +37,8 @@ const Projects = () => {
                   <Fade
                     left={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={500}
+                    duration={300}
+                    delay={300}
                     distance="30px"
                   >
                     <div className="project-wrapper__text">
@@ -55,7 +56,7 @@ const Projects = () => {
                         className="cta-btn cta-btn--hero"
                         href={url || '#!'}
                       >
-                        See Live
+                        Ver más
                       </a>
 
                       {repo && (
@@ -65,7 +66,7 @@ const Projects = () => {
                           className="cta-btn text-color-main"
                           href={repo}
                         >
-                          Source Code
+                          Repositorio
                         </a>
                       )}
                     </div>
@@ -75,8 +76,8 @@ const Projects = () => {
                   <Fade
                     right={isDesktop}
                     bottom={isMobile}
-                    duration={1000}
-                    delay={1000}
+                    duration={300}
+                    delay={300}
                     distance="30px"
                   >
                     <div className="project-wrapper__image">

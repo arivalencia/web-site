@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import Hero from './Hero/Hero';
-import About from './About/About';
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+import Hero from './Hero';
+import About from './About';
+import Projects from './Projects';
+import Contact from './Contact';
+// import Footer from './Footer';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -30,7 +30,7 @@ function App() {
       <About />
       <Projects />
       <Contact />
-      <Footer />
+      {/* <Footer /> */}
     </PortfolioProvider>
   );
 }
