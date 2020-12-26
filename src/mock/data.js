@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'Hola, soy Ari Valencia Delgado',
-  name: 'Desarrollador Android',
+  name: 'Desarrollador Android - Ingeniero T.I.',
   subtitle: ' ',
   cta: 'Sobre mí'
 };
@@ -18,9 +18,9 @@ export const heroData = {
 // ABOUT DATA
 export const aboutData = {
   img: 'me.jpg',
-  paragraphOne: 'Mi nombre es Ari Valencia Delgado ',
-  paragraphTwo: 'Second',
-  paragraphThree: 'Thirt', // if no resume, the button will not show up
+  paragraphOne: 'Soy Ari Valencia Delgado, amante de la tecnología.',
+  paragraphTwo: 'Trabajo como Desarrollador Android desde hace medio año,',
+  paragraphThree: '¡Never Stop Learning!', // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
@@ -28,29 +28,20 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
+    title: 'App de administración Android nativa',
+    info: 'App nativa para dVolada (empresa delivery) donde se pueden gestionar diferentes apartados de sus clientes.',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
     img: 'project.jpg',
-    title: '',
-    info: '',
+    title: 'App nativa para registrar y compartir datos clínicos',
+    info: 'App nativapara para acceder a los datos clínicos de una persona de manera inmediata al sufrir un accidente a través de un código QR y socorrerla.',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
-  },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    repo: 'https://github.com/arivalencia/PlusVida', // if no repo, the button will not show up
   },
 ];
 
