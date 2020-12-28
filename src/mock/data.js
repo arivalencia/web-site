@@ -31,6 +31,7 @@ export const projectsData = [
     title: 'App de administración Android nativa',
     info: 'App nativa para dVolada (empresa delivery) donde se pueden gestionar diferentes apartados de sus clientes.',
     info2: '',
+    technologies: ['Java', 'Firebase', 'GoogleMaps', 'Retrofit', 'Material Design'],
     url: '',
     repo: '', // if no repo, the button will not show up
   },
@@ -40,6 +41,7 @@ export const projectsData = [
     title: 'App nativa para registrar y compartir datos clínicos',
     info: 'App nativapara para acceder a los datos clínicos de una persona de manera inmediata al sufrir un accidente a través de un código QR y socorrerla.',
     info2: '',
+    technologies: ['Kotlin', 'Firebase', 'Google Login', 'QR Scanner'],
     url: '',
     repo: 'https://github.com/arivalencia/PlusVida', // if no repo, the button will not show up
   },

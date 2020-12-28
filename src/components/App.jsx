@@ -3,10 +3,7 @@ import Hero from './Hero';
 import About from './About';
 import Projects from './Projects';
 import Contact from './Contact';
-// import Footer from './Footer';
-
 import { PortfolioProvider } from '../context/context';
-
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
 function App() {
