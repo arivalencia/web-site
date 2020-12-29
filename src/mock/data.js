@@ -23,25 +23,35 @@ export const aboutData = {
   paragraphThree: '¡Never Stop Learning!', // if no resume, the button will not show up
 };
 
+// EXPERIENCE DATA
+export const experienceData = [
+  {
+    company: 'dVolada',
+    lapse: '2020-2021',
+    job: 'Desarrollador Android',
+    desc: 'Creación de app nativa administrativa para la empresa, soprte a sitio web y apps ya existentes.'
+  },
+]
+
 // PROJECTS DATA
 export const projectsData = [
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'App de administración Android nativa',
+    title: 'dVolada Admin',
     info: 'App nativa para dVolada (empresa delivery) donde se pueden gestionar diferentes apartados de sus clientes.',
     info2: '',
-    technologies: ['Java', 'Firebase', 'GoogleMaps', 'Retrofit', 'Material Design'],
+    technologies: ['Java', 'Firebase', 'GoogleMaps', 'Google Places', 'Retrofit', 'Material Design'],
+    images: ['project.jpg', 'profile.jpg', 'me.jpg'],
     url: '',
     repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    img: 'project.jpg',
-    title: 'App nativa para registrar y compartir datos clínicos',
-    info: 'App nativapara para acceder a los datos clínicos de una persona de manera inmediata al sufrir un accidente a través de un código QR y socorrerla.',
-    info2: '',
+    title: 'PlusVida',
+    info: 'App nativa para para acceder a los datos clínicos de una persona de manera inmediata al sufrir un accidente a través de un código QR y socorrerla.',
+    info2: 'Cuando una persona sufre un accidente se nesecitan sus datos clínicos para poder tratarla lo antes posible, PlusVida provee la herramienta para poder almacenar tus datos clinicos en la nube y poder acceder a ellos desde cualquier lugar solo escanendo tu codigo QR.',
     technologies: ['Kotlin', 'Firebase', 'Google Login', 'QR Scanner'],
+    images: ['project.jpg'],
     url: '',
     repo: 'https://github.com/arivalencia/PlusVida', // if no repo, the button will not show up
   },

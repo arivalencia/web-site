@@ -36,7 +36,7 @@ const Projects = () => {
           <div className="project-wrapper">
             <Title title="Projectos" />
             {projects.map((project) => {
-              const { title, info, info2, url, repo, img, id } = project;
+              const { title, info, info2, url, repo, images, id } = project;
               
               return (
                 <Row key={id}>
@@ -51,11 +51,10 @@ const Projects = () => {
                       <div className="project-wrapper__text">
                         <h3 className="project-wrapper__text-title">{title}</h3>
                         <div>
-                          <p>
-                            {info}
-                          </p>
-                          <p className="mb-4">{info2 || ''}</p>
+                          <p>{info}</p>
+                          {/* <p className="mb-4">{info2 || ''}</p> */}
                         </div>
+                        
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
@@ -79,6 +78,7 @@ const Projects = () => {
                             Repositorio
                           </a>
                         )}
+                        
                       </div>
                     </Fade>
                   </Col>
@@ -92,7 +92,7 @@ const Projects = () => {
                       >
                       <div className="project-wrapper__image">
                           <div data-tilt className="thumbnail rounded">
-                            <ProjectImg alt={title} filename={img} />
+                            <ProjectImg alt={title} filename={images[0]} />
                           </div>
                       </div>
                     </Fade>
