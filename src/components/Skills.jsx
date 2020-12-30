@@ -7,9 +7,10 @@ import kotlin from '../images/skills/kotlin.svg'
 import maps from '../images/skills/maps.png'
 import firebase from '../images/skills/firebase.png'
 import androidStudio from '../images/skills/android_studio.png'
+import github from '../images/skills/github.png'
 import retrofit from '../images/skills/retrofit.png'
 
-function Skills(props){
+function Skills(){
 
     return (
         <section id="skills">
@@ -18,23 +19,27 @@ function Skills(props){
                     <Title title="Skills"/>
 
                     <Row>
-                        <Col lg={2} sm={12}>
+                        {/* lg={2} sm={6} */}
+                        <Col  >
                             <img className="image" src={java} alt="Java"/>
                         </Col>
-                        <Col lg={2} sm={12}>
+                        <Col >
                             <img className="image" src={kotlin} alt="Kotlin"/>
                         </Col>
-                        <Col lg={2} sm={12}>
+                        <Col >
                             <img className="image" src={maps} alt="Google Maps"/>
                         </Col>
-                        <Col lg={2} sm={12}>
+                        <Col >
                             <img className="image" src={firebase} alt="Firebase"/>
                         </Col>
-                        <Col lg={2} sm={12}>
+                        <Col >
                             <img className="image" src={androidStudio} alt="Android Studio"/>
                         </Col>
-                        <Col lg={2} sm={12}>
+                        <Col >
                             <img className="image" src={retrofit} alt="Retrofit"/>
+                        </Col>
+                        <Col >
+                            <img className="image" src={github} alt="GitHub"/>
                         </Col>
                     </Row>
                 </div>

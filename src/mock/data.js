@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'Hola, soy Ari Valencia Delgado',
-  name: 'Desarrollador Android - Ing. TI',
+  name: 'Desarrollador Android - Ingeniero TI',
   subtitle: ' ',
   cta: 'Sobre mí'
 };
@@ -19,7 +19,7 @@ export const heroData = {
 export const aboutData = {
   img: 'me.jpg',
   paragraphOne: 'Soy Ari Valencia Delgado, amante de la tecnología.',
-  paragraphTwo: 'Trabajo como Desarrollador Android desde hace medio año,',
+  paragraphTwo: 'Trabajo como Desarrollador Android desde hace medio año en dVolada (empresa delivery), trato de aportar valor a mi empresa generando soluciones para facilitar los procesos.',
   paragraphThree: '¡Never Stop Learning!', // if no resume, the button will not show up
 };
 
@@ -29,7 +29,7 @@ export const experienceData = [
     company: 'dVolada',
     lapse: '2020-2021',
     job: 'Desarrollador Android',
-    desc: 'Creación de app nativa administrativa para la empresa, soprte a sitio web y apps ya existentes.'
+    desc: 'Creación de app nativa administrativa para la empresa, soporte a sitio web y apps ya existentes.'
   },
 ]
 
@@ -41,7 +41,7 @@ export const projectsData = [
     info: 'App nativa para dVolada (empresa delivery) donde se pueden gestionar diferentes apartados de sus clientes.',
     info2: '',
     technologies: ['Java', 'Firebase', 'GoogleMaps', 'Google Places', 'Retrofit', 'Material Design'],
-    images: ['me2.png'],
+    images: ['1-1.png', '1-2.png'],
     url: '',
     repo: '', // if no repo, the button will not show up
   },
@@ -52,7 +52,7 @@ export const projectsData = [
     info2: 'Cuando una persona sufre un accidente se nesecitan sus datos clínicos para poder tratarla lo antes posible, +Vida provee la herramienta para poder almacenar tus datos clínicos en la nube y poder acceder a ellos desde cualquier lugar escanendo tu codigo QR.',
     technologies: ['Kotlin', 'Firebase', 'Google Login', 'QR Scanner'],
     images: ['2-1.png', '2-2.png', '2-3.png'],
-    url: '',
+    url: 'https://drive.google.com/file/d/1A6BUL-qArgl5iX56Efk8-Jrnh6jz5NT3/view?usp=sharing',
     repo: 'https://github.com/arivalencia/PlusVida', // if no repo, the button will not show up
   },
 ];

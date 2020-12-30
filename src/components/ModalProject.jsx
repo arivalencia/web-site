@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Modal, Row, Col } from 'react-bootstrap';
+import { Modal, Row, Col, Button } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
 import ProjectImg from './Image/ProjectImg';
 
@@ -31,21 +31,28 @@ function ModalProject(props) {
                             <p className="project-wrapper-modal__text-sub-title">Tecnologías utilizadas</p>
                             <ul>
                                 {technologies.map(tech =>
-                                    <li key={tech}><p>{tech}</p></li>
+                                    <li key={tech}>
+                                        <p>
+                                            {tech}
+                                        </p>
+                                    </li>
                                 )}
                             </ul>
                         </Col>
                         <Col lg={8} sm={12} style={{ padding: '0rem', margin: '0rem'}}>
                             <Carousel activeIndex={index} onSelect={handleSelect}>
-                                    {images.map( img =>
-                                        <Carousel.Item key={img} interval={2000}>
-                                            <ProjectImg  alt={title} filename={img}/>
-                                        </Carousel.Item>
-                                    )}
+                                {images.map( img => {
+                                    <Carousel.Item key={img} interval={3500}>
+                                        <ProjectImg  alt={title} filename={img}/>
+                                    </Carousel.Item>
+                                })}
                             </Carousel>
                         </Col>
                     </Row>
             </Modal.Body>
+            <Modal.Footer>
+                <Button onClick={props.onHide}>Close</Button>
+            </Modal.Footer>
         </Modal>
     )
 }

@@ -36,7 +36,7 @@ const Projects = () => {
           <div className="project-wrapper">
             <Title title="Projectos" />
             {projects.map((project) => {
-              const { title, info, info2, url, repo, images, id } = project;
+              const { title, info, /*info2,*/ url, repo, images, id } = project;
               
               return (
                 <Row key={id}>
@@ -67,6 +67,17 @@ const Projects = () => {
                           >
                           Ver más
                         </a>
+
+                        {url && (
+                          <a
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="cta-btn text-color-main"
+                          href={url}
+                          >
+                            Descargar
+                          </a>
+                        )}
 
                         {repo && (
                           <a
