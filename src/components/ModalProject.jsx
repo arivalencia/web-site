@@ -38,7 +38,7 @@ function ModalProject(props) {
                         <Col lg={8} sm={12} style={{ padding: '0rem', margin: '0rem'}}>
                             <Carousel activeIndex={index} onSelect={handleSelect}>
                                     {images.map( img =>
-                                        <Carousel.Item interval={2000}>
+                                        <Carousel.Item key={img} interval={2000}>
                                             <ProjectImg  alt={title} filename={img}/>
                                         </Carousel.Item>
                                     )}

@@ -33,37 +33,32 @@ const Header = () => {
             {subtitle}
           </h1>
 
-          <Row>
-            <Col lg={4} sm={12} >
-              <p className="hero-cta">
-                <span className="cta-btn cta-btn--hero">
-                  <Link to="about" smooth duration={1000}>
-                    {cta}
-                  </Link>
-                </span>
-              </p>
-            </Col>
-            {/* <Col lg={6} sm={12} style={{ background: 'black', }}>
-            <div className="social-links">
-                {networks &&
-                  networks.map((network) => {
-                    const { id, name, url } = network;
-                    return (
-                      <a
-                        key={id}
-                        href={url}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                        aria-label={name}
-                      >
-                        <i className={`fa fa-${name} fa-inverse`} />
-                      </a>
-                    );
-                  })}
-              </div>
-            </Col> */}
-          </Row>
+          <p className="hero-cta">
+            <span className="cta-btn cta-btn--hero">
+              <Link to="about" smooth duration={800}>
+                {cta}
+              </Link>
+            </span>
+          </p>
         </Fade>
+        <div className="social-links">
+          {networks &&
+            networks.map((network) => {
+              const { id, name, url } = network;
+              return (
+                <a
+                  key={id}
+                  href={url}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  aria-label={name}
+                >
+                  <i className={`fa fa-${name} fa-inverse`} />
+                </a>
+              );
+            })
+          }
+        </div>
       </Container>
     </section>
   );

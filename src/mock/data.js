@@ -10,7 +10,7 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: 'Hola, soy Ari Valencia Delgado',
-  name: 'Desarrollador Android - Ingeniero T.I.',
+  name: 'Desarrollador Android - Ing. TI',
   subtitle: ' ',
   cta: 'Sobre mí'
 };
@@ -41,17 +41,17 @@ export const projectsData = [
     info: 'App nativa para dVolada (empresa delivery) donde se pueden gestionar diferentes apartados de sus clientes.',
     info2: '',
     technologies: ['Java', 'Firebase', 'GoogleMaps', 'Google Places', 'Retrofit', 'Material Design'],
-    images: ['project.jpg', 'profile.jpg', 'me.jpg'],
+    images: ['me2.png'],
     url: '',
     repo: '', // if no repo, the button will not show up
   },
   {
     id: nanoid(),
-    title: 'PlusVida',
-    info: 'App nativa para para acceder a los datos clínicos de una persona de manera inmediata al sufrir un accidente a través de un código QR y socorrerla.',
-    info2: 'Cuando una persona sufre un accidente se nesecitan sus datos clínicos para poder tratarla lo antes posible, PlusVida provee la herramienta para poder almacenar tus datos clinicos en la nube y poder acceder a ellos desde cualquier lugar solo escanendo tu codigo QR.',
+    title: '+Vida',
+    info: 'App nativa para acceder a los datos clínicos de una persona de manera inmediata al sufrir un accidente a través de un código QR y socorrerla.',
+    info2: 'Cuando una persona sufre un accidente se nesecitan sus datos clínicos para poder tratarla lo antes posible, +Vida provee la herramienta para poder almacenar tus datos clínicos en la nube y poder acceder a ellos desde cualquier lugar escanendo tu codigo QR.',
     technologies: ['Kotlin', 'Firebase', 'Google Login', 'QR Scanner'],
-    images: ['project.jpg'],
+    images: ['2-1.png', '2-2.png', '2-3.png'],
     url: '',
     repo: 'https://github.com/arivalencia/PlusVida', // if no repo, the button will not show up
   },
